@@ -1,0 +1,50 @@
+key_bindings:
+  - { key: Key3,     mods: Alt,     chars: "#"                        }
+
+font:
+  normal:
+    style: Regular
+      #family: Fira Mono For Powerline
+      #family: SF Mono Powerline
+      #family: Meslo LG L DZ for Powerline
+      #family: courier new
+      #family: cascadia code
+    family: MesloLGM Nerd Font
+  bold:
+    style: Bold
+      #italic:
+      #family: Fira Code
+      #style: italic
+  size: 12.99999
+
+window:
+  decorations: buttonless
+  opacity: 0.8
+
+# BEGIN ACE
+colors:
+  primary:
+    background: '#150813'
+    foreground: '#f6e3ca'
+  cursor:
+    text:       '#150813'
+    cursor:     '#f6e3ca'
+  normal:
+    black:      '#150813'
+    red:        '#AB584B'
+    green:      '#F58B33'
+    yellow:     '#FDA433'
+    blue:       '#EAA260'
+    magenta:    '#FFD5A3'
+    cyan:       '#FBDBA7'
+    white:      '#f6e3ca'
+  bright:
+    black:      '#ac9e8d'
+    red:        '#AB584B'
+    green:      '#F58B33'
+    yellow:     '#FDA433'
+    blue:       '#EAA260'
+    magenta:    '#FFD5A3'
+    cyan:       '#FBDBA7'
+    white:      '#f6e3ca'
+# END ACE
