@@ -1,5 +1,5 @@
+
 -- check if neovide exists
 if vim.g.neovide then
-  vim.o.guifont = "JetBrains Mono:h10"
-  vim.g.neovide_theme = "catppuccin"
+  vim.o.guifont = "RobotoMono Nerd Font:h10.2:b"
 end

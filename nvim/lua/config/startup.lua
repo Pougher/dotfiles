@@ -1,3 +1,17 @@
+local startup_header = {
+[[⠀⠀⠀⠀⠀⠀⠀⠀⠀⣶⣄⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀                                                      ]],
+[[⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⣴⣿⡄⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀                                                      ]],
+[[⠀⠀⠀⠀⠀⠀⠰⣶⣾⣿⣿⣿⣿⣿⡇⠀⢠⣷⣤⣶⣿⡇⠀⠀⠀⠀⠀⠀███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗    ]],
+[[⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⣿⣿⣿⣿⣿⣀⣿⣿⣿⣿⣿⣧⣀⠀⠀⠀⠀⠀████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║    ]],
+[[⠀⠀⠀⠀⠀⣷⣦⣀⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║    ]],
+[[⠀⠀⢲⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠀⠀⠀⠀⠀⠀██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║    ]],
+[[⠀⠀⠀⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠁⠀⠀⠀⠀⠀⠀⠀██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║    ]],
+[[⠀⠀⠀⠚⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⠂⠀⠀⠀⠀⠀⠀⠀╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝    ]],
+[[⠀⠀⠀⠀⠀⠀⠀⠉⠙⢻⣿⣿⡿⠛⠉⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀==================================================    ]],
+[[⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠋⠁⠀⠀⠀⠸⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀                                                      ]],
+[[⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀                                                      ]]
+}
+
 local settings = {
     -- every line should be same width without escaped \
     header = {
@@ -7,7 +21,8 @@ local settings = {
         fold_section = false,
         title = "Header",
         margin = 5,
-        content = require('startup.headers').neovim_banner_header,
+        --content = require('startup.headers').neovim_banner_header,
+        content = startup_header,
         highlight = "Statement",
         default_color = "",
         oldfiles_amount = 0,
@@ -39,7 +54,7 @@ local settings = {
         fold_section = false,
         title = "Footer",
         margin = 5,
-        content = { "startup.nvim" },
+        content = { "40% Code writing, 60% Ricing." },
         highlight = "Number",
         default_color = "",
         oldfiles_amount = 0,

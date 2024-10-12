@@ -1,5 +1,6 @@
 vim.cmd [[packadd packer.nvim]]
 
+
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
@@ -21,6 +22,10 @@ return require('packer').startup(function(use)
   use 'shaunsingh/solarized.nvim'
   use 'projekt0n/github-nvim-theme'
   use 'tiagovla/tokyodark.nvim'
+  use 'overcache/NeoSolarized'
+  use 'blazkowolf/gruber-darker.nvim'
+  use 'Mofiqul/vscode.nvim'
+  use 'maxbane/vim-asm_ca65'
 
   -- lsp
   use 'neovim/nvim-lspconfig'
@@ -69,6 +74,6 @@ return require('packer').startup(function(use)
   -- buffer management
   use 'j-morano/buffer_manager.nvim'
 
-  -- discord rich presence
-  use 'Cyuria/discord.nvim'
+  -- discord rpc
+  use 'IogaMaster/neocord'
 end)
