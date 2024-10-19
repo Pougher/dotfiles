@@ -7,7 +7,19 @@ require("noice").setup({
       ["cmp.entry.get_documentation"] = true,
     },
   },
-
+  routes = {
+    {
+      filter = {
+        event = "msg_show",
+        kind = "",
+        find = "more line",
+      },
+      opts = { skip = true }
+    }
+  },
+  messages = {
+    enabled = false,
+  },
   presets = {
     bottom_search = true,
     command_palette = true,

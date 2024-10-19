@@ -32,6 +32,7 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/nvim-cmp'
   use 'nvim-treesitter/nvim-treesitter'
+  use 'lewis6991/spellsitter.nvim'
 
   -- indent blankline
   use 'lukas-reineke/indent-blankline.nvim'
