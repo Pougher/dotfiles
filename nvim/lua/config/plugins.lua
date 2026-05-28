@@ -26,6 +26,7 @@ return require('packer').startup(function(use)
   use 'blazkowolf/gruber-darker.nvim'
   use 'Mofiqul/vscode.nvim'
   use 'maxbane/vim-asm_ca65'
+  use 'navarasu/onedark.nvim'
 
   -- lsp
   use 'neovim/nvim-lspconfig'
@@ -77,4 +78,6 @@ return require('packer').startup(function(use)
 
   -- discord rpc
   use 'IogaMaster/neocord'
+
+  --use 'HiPhish/rainbow-delimiters.nvim'
 end)

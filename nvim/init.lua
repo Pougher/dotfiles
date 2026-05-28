@@ -59,6 +59,7 @@ end
 
 function jdhbox()
 vim.cmd [[
+colorscheme gruvbox
 hi GruvboxGreen           guifg='b0bf24'
 hi GruvboxYellow          guifg='ffb300'
 
@@ -69,7 +70,7 @@ hi @variable              guifg='#ffe1c7'
 hi @string                guifg='#b0bf24'
 hi @type.builtin          guifg='#ffb300'
 hi @type                  guifg='#ffb300'
-hi @function              guifg='#b0bf24'
+hi @function              guifg='#b0bf24' gui=bold
 hi @property              guifg='#82baa0'
 
 hi @variable.parameter.c   guifg='#82baa0'
@@ -101,7 +102,47 @@ hi Comment gui=None
 ]]
 end
 
+function midnight()
+  vim.cmd [[ colorscheme gruber-darker ]]
+  vim.cmd [[ hi @function guifg='#ffffff' ]]
+  vim.cmd [[ hi @string gui=NONE guifg='#73d936']]
+end
+
+function onedark()
+  require('onedark').setup {
+    style = 'darker'
+  }
+  require('onedark').load()
+end
+
 jdhbox()
+--midnight()
+
+--[[
+require('rainbow-delimiters.setup') {
+    strategy = {
+        [''] = 'rainbow-delimiters.strategy.global',
+        vim = 'rainbow-delimiters.strategy.local',
+    },
+    query = {
+        [''] = 'rainbow-delimiters',
+        lua = 'rainbow-blocks',
+    },
+    priority = {
+        [''] = 110,
+        lua = 210,
+    },
+    highlight = {
+        'RainbowDelimiterRed',
+        'RainbowDelimiterYellow',
+        'RainbowDelimiterBlue',
+        'RainbowDelimiterOrange',
+        'RainbowDelimiterGreen',
+        'RainbowDelimiterViolet',
+        'RainbowDelimiterCyan',
+    }
+}
+]]--
 
 -- #1a1a1a for the background
 --vim.cmd [[hi Normal guifg='#ffcdab' ]]
